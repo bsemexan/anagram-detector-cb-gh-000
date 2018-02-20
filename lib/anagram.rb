@@ -6,4 +6,7 @@ class Anagram
     @word = word
   end
 
+  def match
+    self.word.reverse
+
 end
