@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match
-    self.word.group_by {|word| word.chars.sort }
+    self.word.group_by {|w| w.split('').sort }
   end
 
 end
