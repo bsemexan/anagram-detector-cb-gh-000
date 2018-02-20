@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(word)
-    word.include? {|w| w.split('').sort == @word.split("").sort}
+    word.detect {|w| w.split('').sort == @word.split("").sort}
   end
 
 end
